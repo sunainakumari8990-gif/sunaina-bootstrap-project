@@ -1,0 +1,56 @@
+body{
+    font-family: "inter", sans-serif;
+    background-color: #FFFFFF;
+}
+
+
+// // Testimonial Section
+
+.testimonial{
+    background-image: url("../image/testemonial-img.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.testimonial img{
+    object-fit:cover;
+}
+
+.testimonial h2{
+    line-height:1.1;
+}
+
+.testimonial p{
+    line-height:1.8;
+}
+
+@media(max-width:991px){
+
+.testimonial{
+    text-align:center;
+}
+
+.testimonial img{
+    height:550;
+}
+
+.testimonial .p-5{
+    padding:2rem;
+}
+}
+
+.card-img{
+    object-fit: cover;
+}
+
+// .hero-card .card-img{
+//     height: 48.125rem;
+// }
+
+.side-card .card-img{
+    height: 20rem;
+}
+
+
