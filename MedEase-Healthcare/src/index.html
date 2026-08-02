@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>MedEase - Healthcare & Medical Appointment Website</title>
+
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="MedEase - Healthcare & Medical Appointment Website">
+    <meta name="description"
+        content="MedEase is a modern healthcare website that helps patients book doctor appointments, access telehealth services, explore medical specialties, read health blogs, and manage healthcare with a simple, secure, and user-friendly experience.">
+    <meta name="keywords"
+        content="MedEase, Healthcare, Medical Website, Doctor Appointment, Online Consultation, Telehealth, Medical Services, Hospital Website, Health Tips, Medical Blog, Patient Portal, Healthcare Platform, Find Doctor, Appointment Booking, Clinic Website, Responsive Bootstrap Website">
+    <meta name="author" content="Sunaina Kumari">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#3B82F6">
+
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MedEase - Healthcare & Medical Appointment Website">
+    <meta property="og:description"
+        content="Book doctor appointments, connect with healthcare professionals, access telehealth services, and explore expert health advice with MedEase.">
+    <meta property="og:url" content="https://MedEase - Healthcare & Medical Appointment Website.com">
+    <meta property="og:site_name" content="MedEase">
+    <meta property="og:locale" content="en_US">
+
+
+    <!-- Twitter (X) Share Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MedEase - Healthcare & Medical Appointment Website">
+    <meta name="twitter:description"
+        content="Book doctor appointments online, explore healthcare services, read expert health articles, and manage your healthcare journey with MedEase.">
+    <meta name="twitter:site" content="@Sunaina">
+    <meta name="twitter:creator" content="@Sunaina">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/icon/web-icon.svg">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="./assets/js/main.js"></script>
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container py-lg-4">
+            <nav class="navbar navbar-expand-lg">
+
+                <a href="#" class="navbar-brand fw-semibold text-primary fs-4 px-3">
+                    <img src="./assets/icon/web-icon.svg" alt="web-icon" class="logo"> MedEase
+                </a>
+
+                <!-- mobile Toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- manu -->
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav mx-auto text-center">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active fw-normal text-primary">home</a>
+
+                        </li>
+
+                        <li class="nav-item ms-lg-4">
+                            <a class="nav-link" href="#">
+                                Services
+                            </a>
+                        </li>
+
+                        <li class="nav-item ms-lg-4">
+                            <a class="nav-link" href="#">
+                                Find a Doctor
+                            </a>
+                        </li>
+
+                        <li class="nav-item ms-lg-4">
+                            <a class="nav-link" href="#">
+                                About Us
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- button -->
+                    <div class="text-center mt-3 mt-lg-0">
+                        <a href="#" class="btn btn-primary rounded-pill px-5 py-2">
+                            Register
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section>
+            <div class="container">
+                <div class="row py-5">
+
+                    <!-- left container -->
+                    <div class="col-lg-6">
+                        <span class="text-primary bg-primary-subtle rounded-pill px-3 py-2 fs-6 mt-4">
+                            ⭐ Rated #1 choice for healthcare appointments by users</span>
+                        <h1 class="fw-medium lh-base py-4 display-3 py-5">
+                            Connecting You
+                            <span class="text-primary fst-italic fw-normal">to</span>
+                            Better Health
+                        </h1>
+
+                        <p class="text-secondary fs-5 mb-5 fw-normal">
+                            We're here to link you directly to improved health outcomes,
+                            effortlessly connecting you with the care you need.
+                        </p>
+
+                        <div class="d-flex flex-column flex-sm-row gap-3 py-4">
+
+                            <a href="#" class="btn btn-primary rounded-pill px-5 py-3 fs-6 fs-lg-5">
+                                Book Consultation
+                            </a>
+
+                            <a href="#" class="btn btn-outline-primary rounded-pill px-5 py-3 fs-6 fs-lg-5">
+                                Learn More →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6">
+                        <img src="./assets/image/Hero-Image.png" class="img-fluid rounded-5" alt="Doctor">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="py-5">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2 class="fw-medium fs-1">
+                        Choose Doctor's
+                        <span class="text-primary fst-italic">Expertise</span>
+                    </h2>
+                    <a href="#" class="text-decoration-none fs-6 fs-lg-5 text-primary">
+                        See All
+                    </a>
+                </div>
+                <div class="container-fluid py-5 swiper doctorSwiper">
+                    <div class="swiper-wrapper">
+
+                        <!-- Card 1 -->
+                        <div class="swiper-slide">
+                            <div class="card rounded-4 p-4 border-0 h-100 card-bg-color">
+                                <div class="mt-3">
+                                    <img src="./assets/icon/heart.svg" alt="heart">
+                                </div>
+                                <div class="py-4">
+                                    <h3 class="fs-4 fs-lg-2 fw-medium">Cardiologist</h3>
+                                    <p class="text-secondary">
+                                        Heart specialist focusing on cardiovascular health and diseases.
+                                    </p>
+                                </div>
+                                <a href="#" class="text-decoration-none">
+                                    Book Consultation <img src="./assets/icon/ArrowRight.svg" alt="rightarrow">
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="swiper-slide">
+                            <div class="card border-0 rounded-4 p-4 h-100 card-bg-color">
+                                <div class="mt-3">
+                                    <img src="./assets/icon/head.svg" alt="head">
+                                </div>
+                                <div class="py-4">
+                                    <h3 class="fs-4 fs-lg-2 fw-medium">Neurologist</h3>
+                                    <p class="text-secondary">
+                                        Doctor specializing in diagnosing and treating nervous system disorders.
+                                    </p>
+                                </div>
+                                <a href="#" class="text-decoration-none">
+                                    Book Consultation <img src="./assets/icon/ArrowRight.svg" alt="rightarrow">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="swiper-slide">
+                            <div class="card border-0 rounded-4 p-4 h-100 card-bg-color">
+                                <div class="mt-3">
+                                    <img src="./assets/icon/ear.svg" alt="ear">
+                                </div>
+                                <div class="py-4">
+                                    <h3 class="fs-4 fs-lg-2 fw-medium">ENT Specialist</h3>
+                                    <p class="text-secondary">
+                                        Doctor specializing in ear, nose, and throat disorders and surgeries.
+                                    </p>
+
+                                </div>
+
+                                <a href="#" class="text-decoration-none">
+                                    Book Consultation <img src="./assets/icon/ArrowRight.svg" alt="rightarrow">
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- card-4 -->
+                        <div class="swiper-slide">
+                            <div class="card rounded-4 p-4 border-0 h-100 card-bg-color">
+                                <div class="mt-3">
+                                    <img src="./assets/icon/heart.svg" alt="heart">
+                                </div>
+                                <div class="py-4">
+                                    <h3 class="fs-4 fs-lg-2 fw-medium">Cardiologist</h3>
+                                    <p class="text-secondary">
+                                        Heart specialist focusing on cardiovascular health and diseases.
+                                    </p>
+                                </div>
+                                <a href="#" class="text-decoration-none">
+                                    Book Consultation <img src="./assets/icon/ArrowRight.svg" alt="rightarrow">
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div class="swiper-slide">
+                            <div class="card border-0 rounded-4 p-4 h-100 card-bg-color">
+                                <div class="mt-3">
+                                    <img src="./assets/icon/head.svg" alt="head">
+                                </div>
+                                <div class="py-4">
+                                    <h3 class="fs-4 fs-lg-2 fw-medium">Neurologist</h3>
+                                    <p class="text-secondary">
+                                        Doctor specializing in diagnosing and treating nervous system disorders.
+                                    </p>
+                                </div>
+                                <a href="#" class="text-decoration-none">
+                                    Book Consultation <img src="./assets/icon/ArrowRight.svg" alt="rightarrow">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Card 6 -->
+                        <div class="swiper-slide">
+                            <div class="card border-0 rounded-4 p-4 h-100 card-bg-color">
+                                <div class="mt-3">
+                                    <img src="./assets/icon/ear.svg" alt="ear">
+                                </div>
+                                <div class="py-4">
+
+                                    <h3 class="fs-4 fs-lg-2 fw-medium">ENT Specialist</h3>
+                                    <p class="text-secondary">
+                                        Doctor specializing in ear, nose, and throat disorders and surgeries.
+                                    </p>
+                                </div>
+
+                                <a href="#" class="text-decoration-none">
+                                    Book Consultation <img src="./assets/icon/ArrowRight.svg" alt="rightarrow">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center mt-5">
+                        <div class="position-static m-0">
+                            <img src="./assets/icon/ArrowCircleLeft.svg" alt="arrow" class="left-arrow">
+                        </div>
+                        <div class="swiper-pagination position-static w-auto"></div>
+                        <div class="position-static m-0">
+                            <img src="./assets/icon/ArrowCircleRight.svg" alt="arrow" class="right-arrow">
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="./assets/image/docters.png" class="img-fluid rounded-5 w-100" alt="Doctors">
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="badge rounded-pill bg-primary-subtle text-primary px-3 fs-6 py-2 mb-4">
+                            ⭐ Rated #1 for appointments with many professional doctors
+                        </p>
+                        <p class="fw-medium lh-sm my-4 fs-3">
+                            We're revolutionizing healthcare with seamless access to
+                            trusted professionals, prioritizing your journey to better
+                            health.
+                        </p>
+                        <div class="row mt-5">
+                            <div class="col-6">
+                                <p class="display-6 fw-medium text-primary">
+                                    40+
+                                </p>
+                                <p class="text-secondary mb-0">
+                                    Dedicated Doctors
+                                </p>
+                            </div>
+                            <div class="col-6">
+                                <p class="display-6 fw-medium text-primary">
+                                    10K+
+                                </p>
+                                <p class="text-secondary mb-0">
+                                    Hours of Patient Consultations
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="container">
+                <div class="position-relative rounded-5 overflow-hidden">
+                    <img src="./assets/image/docter-1.png" class="img-fluid w-100" alt="Doctor">
+                    <!-- Overlay -->
+                    <div class="position-absolute top-0 start-0 w-100 h-100
+                        d-flex flex-column justify-content-center align-items-center
+                        text-center bg-dark bg-opacity-50 p-4">
+                        <h2 class="display-4 fw-medium text-white mb-5">
+                            Start Your Health
+                            Journey Here
+                        </h2>
+                        <div class="d-flex flex-column flex-sm-row gap-3">
+                            <a href="#" class="btn btn-primary rounded-pill px-5 py-3">
+                                Book Consultation Now
+                            </a>
+                            <a href="#" class="btn btn-outline-light rounded-pill px-5 py-3">
+                                Learn More
+                                <i class="bi bi-arrow-right ms-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+
+    <footer class="bg-dark py-5 py-lg-6">
+        <div class="container">
+
+            <div class="row gy-5 justify-content-between">
+
+                <!-- Left -->
+                <div class="col-12 col-lg-4 text-center text-lg-start">
+
+                    <a href="#" class="navbar-brand text-primary fw-bold fs-3">
+                        <img src="./assets/icon/web-icon.svg" alt=""> MedEase
+                    </a>
+
+                    <p class="text-white-50 mt-4 mb-4">
+                        MedEase simplifies healthcare with an easy-to-use
+                        platform for booking appointments, telehealth
+                        services, and managing patient records.
+                    </p>
+
+                    <div class="d-flex justify-content-center justify-content-lg-start gap-4">
+                        <a href="#"><img src="./assets/icon/facebook.svg" alt="Facebook-icon"></a>
+                        <a href="#"><img src="./assets/icon/instagram.svg" alt="instagram-icon"></a>
+                        <a href="#"><img src="./assets/icon/twitter.svg" alt="twitter-icon"></a>
+                    </div>
+
+                </div>
+
+                <!-- Right -->
+                <div class="col-12 col-lg-7">
+
+                    <div class="row text-lg-start gy-4">
+
+                        <!-- Services -->
+                        <div class="col-sm-6 col-md-4">
+
+                            <h5 class="text-white mb-4">
+                                Services
+                            </h5>
+
+                            <ul class="list-unstyled">
+
+                                <li class="mb-3"><a href="#" class="text-white-50 text-decoration-none">Primary Care</a>
+                                </li>
+
+                                <li class="mb-3"><a href="#" class="text-white-50 text-decoration-none">Specialist
+                                        Care</a></li>
+
+                                <li class="mb-3"><a href="#" class="text-white-50 text-decoration-none">Mental Health
+                                        Services</a></li>
+
+                                <li><a href="#" class="text-white-50 text-decoration-none">Telehealth</a></li>
+
+                            </ul>
+
+                        </div>
+
+                        <!-- Doctor -->
+                        <div class="col-6 col-md-4">
+
+                            <h5 class="text-white mb-4">
+                                Find a Doctor
+                            </h5>
+
+                            <ul class="list-unstyled">
+
+                                <li class="mb-3"><a href="#" class="text-white-50 text-decoration-none">Top-Rated
+                                        Doctors</a></li>
+
+                                <li class="mb-3"><a href="#" class="text-white-50 text-decoration-none">Appointment
+                                        Scheduling</a></li>
+
+                                <li class="mb-3"><a href="#" class="text-white-50 text-decoration-none">Patient
+                                        Reviews</a></li>
+
+                                <li><a href="#" class="text-white-50 text-decoration-none">Doctor Profiles</a></li>
+
+                            </ul>
+
+                        </div>
+
+                        <!-- About -->
+                        <div class="col-12 col-md-4">
+
+                            <h5 class="text-white mb-4">
+                                About Us
+                            </h5>
+
+                            <ul class="list-unstyled">
+
+                                <li class="mb-3"><a href="#" class="text-white-50 text-decoration-none">News and
+                                        Updates</a></li>
+
+                                <li class="mb-3"><a href="#" class="text-white-50 text-decoration-none">Careers</a></li>
+
+                                <li class="mb-3"><a href="#" class="text-white-50 text-decoration-none">Community
+                                        Involvement</a></li>
+
+                                <li><a href="#" class="text-white-50 text-decoration-none">Contact Us</a></li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
